@@ -13,6 +13,8 @@
 		17056AA62C4E5D00001D5392 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 17056AA52C4E5D00001D5392 /* Base */; };
 		17056AA82C4E5D01001D5392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17056AA72C4E5D01001D5392 /* Assets.xcassets */; };
 		17056AAB2C4E5D01001D5392 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 17056AAA2C4E5D01001D5392 /* Base */; };
+		17056AB42C4E650C001D5392 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 17056AB32C4E650C001D5392 /* GoogleMobileAds */; };
+		17056AB72C4E8CF8001D5392 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 17056AB62C4E8CF8001D5392 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17056AB42C4E650C001D5392 /* GoogleMobileAds in Frameworks */,
+				17056AB72C4E8CF8001D5392 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = AdMobProject;
+			packageProductDependencies = (
+				17056AB32C4E650C001D5392 /* GoogleMobileAds */,
+				17056AB62C4E8CF8001D5392 /* SnapKit */,
+			);
 			productName = AdMobProject;
 			productReference = 17056A9B2C4E5D00001D5392 /* AdMobProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 17056A922C4E5D00001D5392;
+			packageReferences = (
+				17056AB22C4E650C001D5392 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				17056AB52C4E8CF8001D5392 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 17056A9C2C4E5D00001D5392 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +375,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17056AB22C4E650C001D5392 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+		17056AB52C4E8CF8001D5392 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17056AB32C4E650C001D5392 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17056AB22C4E650C001D5392 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		17056AB62C4E8CF8001D5392 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17056AB52C4E8CF8001D5392 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17056A932C4E5D00001D5392 /* Project object */;
 }
